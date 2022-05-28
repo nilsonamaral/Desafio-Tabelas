@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela em HTMl.</title>
+<style>
+  body {
+    background-color: rgba(123, 67, 175, 0.918);
+  }
+
+  h1 {
+    background-image: linear-gradient(to right, rgb(44, 209, 44), rgba(255, 255, 0, 0.342));
+  }
+
+table {
+  background-image: linear-gradient(to bottom, rgba(11, 11, 240, 0.856), rgba(250, 32, 32, 0.753));
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 4px solid red;
+}
+
+tr.linha {
+  background-color: yellowgreen;
+}
+
+td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.celula {
+  background-color: blue;
+}
+
+</style>
+</head>
+<body>
+  <main>
+    <h1>CRIANDO TABELAS</h1>
+  </main>
+  <table>
+    <tr> <!--primeira linha-->
+
+      <td colspan="2">A2</td>
+    </tr>
+    <tr class="linha">
+      <td rowspan="- 2" top>B2</td>
+      <td>B3</td>
+      <td rowspan="2">B4</td>
+    </tr>
+    <tr>
+      <td colspan="2">C1</td>
+
+
+    </tr>  
+  </table>
+</body>
+</html>

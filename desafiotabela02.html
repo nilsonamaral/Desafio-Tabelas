@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabelas pt II</title>
+    <style>
+        body {
+            background-color: rgba(60, 64, 67, 1);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            background-image: linear-gradient(to right, green, rgba(255, 255, 255, 0.295));
+            margin: 50px 0px 50px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+            width: 500px;
+            height: 400px;
+            margin: auto;
+        }
+
+        td {
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Desafio Tabelas II</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="2n">3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td colspan="3n">8</td>
+            <td>9</td>
+            <td  rowspan="2n">10</td>
+        </tr>
+        <tr>
+            <td colspan="2n">11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>  
+    </table>
+    </main>
+</body>
+</html>
