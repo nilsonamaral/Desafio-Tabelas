@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio tabela parte II</title>
+    <style>
+        body {
+            background-color: rgb(53, 54, 58);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right, green, white);
+            text-align: center;
+            color: white;
+        }
+
+        table {
+            background-color: royalblue;
+            border: 1px solid black;
+            width: 600px;
+            height: 100px;
+            color: white;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        .destaque {
+            background-color: rgb(109, 108, 108);
+        }
+
+        #pontos {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Média de Notas</h1>
+    <table>
+        <thead class="destaque">
+            <tr>
+                <th rowspan="2">Áreas</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="destaque">Nota 1</td>
+                <td class="destaque">Nota 2</td>               
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="destaque">Média de Exatas:</th>
+                <td class="destaque" id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+                <td id="pontos">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="destaque">Média de Humanas:</th>
+                <td class="destaque" id="pontos">0.0</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
